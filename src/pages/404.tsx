@@ -1,10 +1,20 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import { SiteMetadata } from "../model"
+import { Layout } from "../components/Layout"
+import { Seo } from "../components/seo/Seo"
 
-const NotFoundPage = ({ data, location }) => {
+interface NotFoundPageProps {
+  data: {
+    site: {
+      siteMetadata: SiteMetadata
+    }
+  }
+  location: Location
+}
+
+export default function NotFoundPage({ data, location }: NotFoundPageProps) {
   const siteTitle = data.site.siteMetadata.title
 
   return (
@@ -15,8 +25,6 @@ const NotFoundPage = ({ data, location }) => {
     </Layout>
   )
 }
-
-export default NotFoundPage
 
 export const pageQuery = graphql`
   query {
