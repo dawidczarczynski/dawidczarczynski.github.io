@@ -1,6 +1,8 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { PostBasics } from "../../model/post-basics"
+import * as React from 'react'
+import { Link } from 'gatsby'
+import { PostBasics } from '../../model/post-basics'
+
+import * as styles from './post-preview.module.css'
 
 interface PostPreviewProps {
     post: PostBasics
@@ -11,7 +13,7 @@ export function PostPreview({ post }: PostPreviewProps) {
 
     return (
         <article
-            className="post-list-item"
+            className={styles.postListItem}
             itemScope
             itemType="http://schema.org/Article"
         >

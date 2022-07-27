@@ -1,6 +1,6 @@
-import * as React from "react"
-import { Helmet } from "react-helmet"
-import { useSiteMetadata } from "./useSiteMetadata";
+import * as React from 'react'
+import { Helmet } from 'react-helmet'
+import { useSiteMetadata } from './useSiteMetadata'
 
 interface SeoProps {
     title: string
@@ -9,8 +9,14 @@ interface SeoProps {
     meta?: Object[]
 }
 
-export function Seo({ description = '', lang = 'en', meta = [], title }: SeoProps) {
-    const { metadataTitle, metadataDescription = description } = useSiteMetadata()
+export function Seo({
+    description = '',
+    lang = 'en',
+    meta = [],
+    title,
+}: SeoProps) {
+    const { metadataTitle, metadataDescription = description } =
+        useSiteMetadata()
     const seoMetadata = [
         {
             name: `description`,
@@ -28,7 +34,7 @@ export function Seo({ description = '', lang = 'en', meta = [], title }: SeoProp
             property: `og:type`,
             content: `website`,
         },
-        ...meta
+        ...meta,
     ]
 
     return (
