@@ -16,7 +16,7 @@ export function MainHeader({ title }: HeaderComponentProps) {
                     width={50}
                     height={50}
                 />
-                {title}
+                <span className={styles.mainTitle}>{title}</span>
             </Link>
         </h1>
     )

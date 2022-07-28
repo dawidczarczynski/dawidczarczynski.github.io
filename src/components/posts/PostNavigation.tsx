@@ -2,6 +2,8 @@ import { Link } from 'gatsby'
 import * as React from 'react'
 import { NavigationPost } from '../../model'
 
+import * as styles from './post-navigation.module.css'
+
 interface PostNavigationProps {
     previous: NavigationPost
     next: NavigationPost
@@ -9,16 +11,8 @@ interface PostNavigationProps {
 
 export function PostNavigation({ previous, next }: PostNavigationProps) {
     return (
-        <nav className="blog-post-nav">
-            <ul
-                style={{
-                    display: `flex`,
-                    flexWrap: `wrap`,
-                    justifyContent: `space-between`,
-                    listStyle: `none`,
-                    padding: 0,
-                }}
-            >
+        <nav>
+            <ul className={styles.blogPostNav}>
                 <li>
                     {previous && (
                         <Link to={previous.fields.slug} rel="prev">

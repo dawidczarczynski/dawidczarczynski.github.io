@@ -29,7 +29,7 @@ export function Bio() {
             />
             {author?.name && (
                 <p>
-                    {Texts.WRITTEN_BY} <strong>{author.name}</strong>{' '}
+                    {Texts.WRITTEN_BY} <strong>{author.name}</strong>
                     {author?.summary || null}
                 </p>
             )}

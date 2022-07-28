@@ -6,7 +6,3 @@
     font-size: var(--fontSize-2);
     font-family: var(--font-heading);
 }
-
-.blog-post-nav ul {
-    margin: var(--spacing-0);
-}

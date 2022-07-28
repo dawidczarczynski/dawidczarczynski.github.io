@@ -50,6 +50,15 @@ export const pageQuery = graphql`
                     date(formatString: "MMMM DD, YYYY")
                     title
                     description
+                    category
+                    image {
+                        src {
+                            childImageSharp {
+                                gatsbyImageData(width: 500)
+                            }
+                        }
+                        alt
+                    }
                 }
             }
         }

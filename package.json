@@ -6,6 +6,7 @@
   "author": "Dawid Czarczynski <dawidczarczynski@gmail.com>",
   "dependencies": {
     "components": "^0.1.0",
+    "date-fns": "^2.29.1",
     "gatsby": "^4.13.0",
     "gatsby-plugin-feed": "^4.13.0",
     "gatsby-plugin-gatsby-cloud": "^4.13.0",

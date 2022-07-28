@@ -9,6 +9,7 @@ export function ArticleHeader({ title }: HeaderComponentProps) {
     return (
         <Link className={styles.headerLinkHome} to="/">
             <StaticImage
+                className={styles.headerLogo}
                 src="../../images/logo.png"
                 alt={title}
                 width={20}

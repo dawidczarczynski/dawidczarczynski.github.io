@@ -2,28 +2,16 @@ module.exports = {
     siteMetadata: {
         title: `Engineering blog`,
         author: {
-            name: `Dawid Czarczynski`,
-            summary: `, pasjonat inżynierii oprogramowania.`,
+            name: `Dawid Czarczyński`,
+            summary: `, pasjonat inżynierii oprogramowania. JavaScript, Node.js, Frontend, Backend.`,
         },
-        description: `Blog techniczny poruszający kwestie związanie z wytwarzaniem oprogramowania. JavaScript, Node.js, Frontend, Backend.`,
+        description: `Blog techniczny poruszający rozmaite kwestie związanie z wytwarzaniem oprogramowania. JavaScript, Node.js, Frontend, Backend.`,
         siteUrl: `https://dawidczarczynski.github.io/`,
     },
     plugins: [
+        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
         `gatsby-plugin-image`,
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: `${__dirname}/content/blog`,
-                name: `blog`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `images`,
-                path: `${__dirname}/src/images`,
-            },
-        },
         {
             resolve: `gatsby-transformer-remark`,
             options: {
@@ -46,8 +34,20 @@ module.exports = {
                 ],
             },
         },
-        `gatsby-transformer-sharp`,
-        `gatsby-plugin-sharp`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/content/blog`,
+                name: `blog`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `images`,
+                path: `${__dirname}/src/images`,
+            },
+        },
         // {
         //   resolve: `gatsby-plugin-google-analytics`,
         //   options: {
