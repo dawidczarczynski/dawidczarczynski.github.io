@@ -1,3 +1,5 @@
+import { ImageDataLike } from "gatsby-plugin-image"
+
 export interface PostBasics {
     excerpt: string
     fields: {
@@ -7,5 +9,10 @@ export interface PostBasics {
         date: string
         title: string
         description: string
+        category: string
+        image: {
+            src: ImageDataLike
+            alt: string
+        }
     }
 }

@@ -1,0 +1,24 @@
+.preview-metadata {
+    display: flex;
+    align-items: center;
+}
+
+.preview-metadata-left {
+    padding-right: var(--spacing-3);
+}
+
+.preview-category-image {
+    border-radius: 5px;
+}
+
+.preview-category {
+    padding-top: var(--spacing-1);
+    font-size: var(--fontSize-0);
+    font-weight: var(--fontWeight-medium);
+    line-height: var(--lineHeight-none);
+}
+
+.preview-distance {
+    font-size: var(--fontSize-0);
+    color: var(--color-text-light);
+}

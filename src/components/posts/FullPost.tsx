@@ -1,6 +1,8 @@
-import * as React from 'react';
-import { PostDetails } from '../../model/post-details';
-import { Bio } from '../bio/Bio';
+import * as React from 'react'
+import { PostDetails } from '../../model/post-details'
+import { Bio } from '../bio/Bio'
+
+import * as styles from './full-post.module.css'
 
 interface FullPostProps {
     post: PostDetails
@@ -9,7 +11,7 @@ interface FullPostProps {
 export function FullPost({ post }: FullPostProps) {
     return (
         <article
-            className="blog-post"
+            className={styles.blogPost}
             itemScope
             itemType="http://schema.org/Article"
         >

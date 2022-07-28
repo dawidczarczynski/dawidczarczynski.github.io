@@ -1,12 +1,12 @@
-import * as React from "react"
-import { graphql } from "gatsby"
+import * as React from 'react'
+import { graphql } from 'gatsby'
 
-import { SiteMetadata, PostBasics } from "../model"
-import { Layout } from "../components/Layout"
-import { Bio } from "../components/bio/Bio"
-import { Seo } from "../components/seo/Seo"
-import { AllPosts } from "../components/posts/AllPosts"
-import { Texts } from "../constants/texts"
+import { SiteMetadata, PostBasics } from '../model'
+import { Layout } from '../components/Layout'
+import { Bio } from '../components/bio/Bio'
+import { Seo } from '../components/seo/Seo'
+import { AllPosts } from '../components/posts/AllPosts'
+import { Texts } from '../constants/texts'
 
 interface BlogIndexProps {
     data: {
@@ -19,7 +19,6 @@ interface BlogIndexProps {
     }
     location: Location
 }
-
 
 export default function BlogIndex({ data, location }: BlogIndexProps) {
     const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -35,24 +34,33 @@ export default function BlogIndex({ data, location }: BlogIndexProps) {
 }
 
 export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      nodes {
-        excerpt
-        fields {
-          slug
+    query {
+        site {
+            siteMetadata {
+                title
+            }
         }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-          description
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+            nodes {
+                excerpt
+                fields {
+                    slug
+                }
+                frontmatter {
+                    date(formatString: "MMMM DD, YYYY")
+                    title
+                    description
+                    category
+                    image {
+                        src {
+                            childImageSharp {
+                                gatsbyImageData(width: 500)
+                            }
+                        }
+                        alt
+                    }
+                }
+            }
         }
-      }
     }
-  }
 `
