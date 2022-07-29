@@ -4,8 +4,8 @@ import { graphql } from 'gatsby'
 import { SiteMetadata, NavigationPost, PostDetails } from '../model'
 import { Layout } from '../components/Layout'
 import { Seo } from '../components/seo/Seo'
-import { FullPost } from '../components/posts/FullPost'
-import { PostNavigation } from '../components/posts/PostNavigation'
+import { FullPost } from '../components/full-post/FullPost'
+import { PostNavigation } from '../components/post-navigation/PostNavigation'
 
 interface BlogPostTemplateProps {
     data: {
@@ -58,6 +58,15 @@ export const pageQuery = graphql`
                 title
                 date(formatString: "MMMM DD, YYYY")
                 description
+                category
+                image {
+                    src {
+                        childImageSharp {
+                            gatsbyImageData(width: 1200)
+                        }
+                    }
+                    alt
+                }
             }
         }
         previous: markdownRemark(id: { eq: $previousPostId }) {

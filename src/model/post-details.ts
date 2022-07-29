@@ -1,3 +1,5 @@
+import { ImageDataLike } from "gatsby-plugin-image"
+
 export interface PostDetails {
     id: string
     excerpt: string
@@ -6,5 +8,10 @@ export interface PostDetails {
         title: string
         date: string
         description: string
+        category: string
+        image: {
+            src: ImageDataLike
+            alt: string
+        }
     }
 }

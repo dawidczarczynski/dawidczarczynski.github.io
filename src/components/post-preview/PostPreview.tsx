@@ -5,7 +5,7 @@ import { PostPreviewImage } from './PostPreviewImage'
 import { PostPreviewContent } from './PostPreviewContent'
 
 import * as styles from './post-preview.module.css'
-import { PostPreviewMetadata } from './PostPreviewMetadata'
+import { PostMetadata } from '../post-metadata/PostMetadata'
 
 
 interface PostPreviewProps {
@@ -30,7 +30,7 @@ export function PostPreview({ post }: PostPreviewProps) {
             </header>
             <section className={styles.postContent}>
                 <div className={styles.postMetadata}>
-                    <PostPreviewMetadata 
+                    <PostMetadata 
                         date={post.frontmatter.date}
                         category={post.frontmatter.category} />
                 </div>

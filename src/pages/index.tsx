@@ -5,7 +5,7 @@ import { SiteMetadata, PostBasics } from '../model'
 import { Layout } from '../components/Layout'
 import { Bio } from '../components/bio/Bio'
 import { Seo } from '../components/seo/Seo'
-import { AllPosts } from '../components/posts/AllPosts'
+import { AllPosts } from '../components/all-posts/AllPosts'
 import { Texts } from '../constants/texts'
 
 interface BlogIndexProps {

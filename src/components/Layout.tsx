@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Footer } from './footer/Footer'
+import { Wrapper } from './wrapper/Wrapper'
 import { headerFactory } from './header/headerFactory'
 
 import * as styles from './layout.module.css'
@@ -19,7 +20,7 @@ export function Layout({
     const Header = headerFactory(isRootPath)
 
     return (
-        <div className={styles.wrapper} data-is-root-path={isRootPath}>
+        <Wrapper isRootPath={isRootPath}>
             <header className={styles.header}>
                 <Header title={title} />
             </header>
@@ -27,6 +28,6 @@ export function Layout({
             <footer>
                 <Footer />
             </footer>
-        </div>
+        </Wrapper>
     )
 }
