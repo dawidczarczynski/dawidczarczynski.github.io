@@ -1,0 +1,14 @@
+.wrapper {
+    margin: var(--spacing-0) auto;
+    padding: var(--spacing-10) var(--spacing-5);
+}
+
+.index-wrapper {
+    composes: wrapper;
+    max-width: var(--maxWidth-5xl);
+}
+  
+.post-wrapper {
+    composes: wrapper;
+    max-width: var(--maxWidth-3xl);
+}

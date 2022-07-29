@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: How to Create A Sliding Sidebar Menu with Framer Motion
 date: '2022-05-01T22:12:03.284Z'
 description: This is my first post on my new fake blog! How exciting!
 category: TypeScript
