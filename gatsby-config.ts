@@ -12,7 +12,6 @@ module.exports = {
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-image`,
-        `gatsby-disable-404`,
         {
             resolve: `gatsby-transformer-remark`,
             options: {
