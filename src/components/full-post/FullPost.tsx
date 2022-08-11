@@ -1,4 +1,4 @@
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image'
 import * as React from 'react'
 import { PostDetails } from '../../model/post-details'
 import { Bio } from '../bio/Bio'
