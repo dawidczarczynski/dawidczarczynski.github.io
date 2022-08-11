@@ -38,6 +38,7 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@types/react-helmet": "^6.1.5",
+    "gatsby-disable-404": "^0.2.1",
     "prettier": "^2.6.2"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",

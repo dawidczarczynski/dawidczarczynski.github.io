@@ -5769,6 +5769,11 @@ gatsby-core-utils@^3.14.0, gatsby-core-utils@^3.8.2:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
+gatsby-disable-404@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-disable-404/-/gatsby-disable-404-0.2.1.tgz#27b1112c4bbc42078043218be48fa42abd9cbd3f"
+  integrity sha512-P7A4mZH+RTNKkMEOaF9TzlqCI4/3Nautym3bbC8AbTGBgd1TbnH7c//St/EAtt6zWg7Z/+XSwlnBQF84QxfFtg==
+
 gatsby-graphiql-explorer@^2.14.0:
   version "2.14.0"
   resolved "https://registry.yarnpkg.com/gatsby-graphiql-explorer/-/gatsby-graphiql-explorer-2.14.0.tgz#3864bfc7176e3f1bfbea02f8afc0dcc2e273534e"

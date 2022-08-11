@@ -4,8 +4,8 @@ date: '2022-05-01T22:12:03.284Z'
 description: This is my first post on my new fake blog! How exciting!
 category: TypeScript
 image:
-    src: ./react.jpg
-    alt: React
+    src: ./ts.jpg
+    alt: TypeScript
 ---
 
 This is my first post on my new fake blog! How exciting!
